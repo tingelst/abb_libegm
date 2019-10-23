@@ -55,7 +55,7 @@ set(SRC_FILES
     src/egm_trajectory_interface.cpp
     ${EgmProtoSources})
 
-add_library(${PROJECT_NAME} ${SRC_FILES})
+add_library(${PROJECT_NAME} SHARED ${SRC_FILES})
 include_directories(include
                     ${CMAKE_CURRENT_BINARY_DIR} # Contains protobuf generated
                                                 # sources
